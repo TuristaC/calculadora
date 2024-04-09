@@ -6,6 +6,11 @@
             "use": "@vercel/python"
            }
 ] ,
+  "engines": {
+    "node": "18.x"
+  }
+,
+
 "routes": [
     {
         "src": "(.*)",
