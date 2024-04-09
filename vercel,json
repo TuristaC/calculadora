@@ -4,12 +4,11 @@
         {
             "src": "./flask_app.py",
             "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-}
+           }
+] ,
+"routes": [
+    {
+        "src": "(.*)",
+        "dest": "main.py"
+    }
+]}
