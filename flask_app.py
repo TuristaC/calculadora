@@ -104,7 +104,7 @@ def index():
 
             result1 += "calcular"
 
-    return render_template("cativo.html", errors=errors, result=result)
+    return render_template("preco.html", errors=errors, result=result)
 
 
 @app.route('/metodologia')
