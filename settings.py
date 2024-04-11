@@ -1,1 +1,0 @@
-STATIC_ROOT = "/home/myusername/myproject/static"
