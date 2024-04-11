@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-# coding: utf-8
+#coding: utf-8
 import pandas as pd
 from datetime import datetime
 
-#url = 'https://dadosabertos.aneel.gov.br/dataset/5a583f3e-1646-4f67-bf0f-69db4203e89e/resource/fcf2906c-7c32-4b9b-a637-054e7a5234f4/download/tarifas-homologadas-distribuidoras-energia-eletrica.csv'
-#tarifas = pd.read_csv(url, low_memory=False,encoding='latin-1',sep=';')
-tarifas = pd.read_csv(r'C:\Users\guisa\Downloads\mysite\tarifas.csv', low_memory=False,encoding='latin-1',sep=';')
+url = 'https://dadosabertos.aneel.gov.br/dataset/5a583f3e-1646-4f67-bf0f-69db4203e89e/resource/fcf2906c-7c32-4b9b-a637-054e7a5234f4/download/tarifas-homologadas-distribuidoras-energia-eletrica.csv'
+tarifas = pd.read_csv(url, low_memory=False,encoding='latin-1',sep=';')
+#tarifas = pd.read_csv(r'C:\Users\guisa\Downloads\mysite\tarifas.csv', low_memory=False,encoding='latin-1',sep=';')
 
 distribuidoras =tarifas['SigAgente'].dropna().unique().tolist()
 
@@ -76,5 +76,6 @@ def tarifa_atual(distribuidora,subgrupo,modalidade):
 distribuidora = 'LIGHT'
 subgrupo = 'A4'
 modalidade = 'Azul'
-print(tarifa_atual(distribuidora,subgrupo,modalidade)[6])
+#print(tarifa_atual(distribuidora,subgrupo,modalidade)[6])
 
+print(tarifas)
