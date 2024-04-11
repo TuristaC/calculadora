@@ -12,9 +12,13 @@ from calculo import InputConsumoHFP, InputConsumoHP, InputDemandaHFP, InputDeman
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-
 @app.route('/', methods=["GET", "POST"])
-def index():
+def teste():
+    return render_template('teste.html')
+
+
+@app.route('/95', methods=["GET", "POST"])
+def home():
     print('log funcionando')
     errors = ""
     result = ""
