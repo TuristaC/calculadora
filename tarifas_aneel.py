@@ -76,6 +76,5 @@ def tarifa_atual(distribuidora,subgrupo,modalidade):
 distribuidora = 'LIGHT'
 subgrupo = 'A4'
 modalidade = 'Azul'
-#print(tarifa_atual(distribuidora,subgrupo,modalidade)[6])
+print(tarifa_atual(distribuidora,subgrupo,modalidade)[6])
 
-print(tarifas)
